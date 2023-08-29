@@ -75,7 +75,7 @@ export const SearchInput = styled.input`
   width: 250px;
 `
 export const SearchLogo = styled.button`
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   padding: 6px;
   align-self: center;
   border: 1px solid #909090;

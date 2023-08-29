@@ -25,7 +25,7 @@ class VideoItemDetails extends Component {
   state = {
     videoDetails: {},
     liked: false,
-    disliked: false,
+    disLiked: false,
     saved: false,
   }
 
@@ -68,21 +68,21 @@ class VideoItemDetails extends Component {
   }
 
   isDisliked = () => {
-    const {liked, disliked} = this.state
+    const {liked, disLiked} = this.state
     if (liked) {
       this.setState({liked: false})
     }
-    if (disliked) {
-      this.setState({disliked: false})
+    if (disLiked) {
+      this.setState({disLiked: false})
     } else {
-      this.setState({disliked: true})
+      this.setState({disLiked: true})
     }
   }
 
   isLiked = () => {
-    const {liked, disliked} = this.state
-    if (disliked) {
-      this.setState({disliked: false})
+    const {liked, disLiked} = this.state
+    if (disLiked) {
+      this.setState({disLiked: false})
     }
     if (liked) {
       this.setState({liked: false})
@@ -101,7 +101,7 @@ class VideoItemDetails extends Component {
   }
 
   render() {
-    const {videoDetails, liked, disliked, saved} = this.state
+    const {videoDetails, liked, disLiked, saved} = this.state
     const {
       videoUrl,
       title,
@@ -144,7 +144,7 @@ class VideoItemDetails extends Component {
                       </Button>
                       <Button
                         onClick={this.isDisliked}
-                        color={disliked ? '#2563eb' : '#64748b'}
+                        color={disLiked ? '#2563eb' : '#64748b'}
                       >
                         <AiOutlineDislike fontSize="20px" />
                         DisLike

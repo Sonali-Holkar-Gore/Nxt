@@ -5,7 +5,7 @@ export const FilterGroupContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px;
   min-height: 100vh;
   width: 20%;
 `
@@ -13,6 +13,7 @@ export const FilterGroupContainer = styled.div`
 export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 export const LinkContainer = styled.div`
