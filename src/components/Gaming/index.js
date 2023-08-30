@@ -45,7 +45,7 @@ class Gaming extends Component {
   getGamingVideos = async () => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = 'https://apis.ccbp.in/videos/gaming'
+    const apiUrl = `https://apis.ccbp.in/videos/gaming`
     const options = {
       method: 'GET',
       headers: {
@@ -125,7 +125,7 @@ class Gaming extends Component {
                     <VideoDetailsContainer key={data.id}>
                       <ThumbnailUrl
                         src={data.thumbnailUrl}
-                        alt={data.thumbnailUrl}
+                        alt="video thumbnail"
                       />
                       <Title color={textColor}>{data.title}</Title>
                       <Content>{data.viewCount} Watching Worldwide</Content>
